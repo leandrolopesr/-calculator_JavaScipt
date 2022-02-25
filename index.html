@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css/style.css" rel="stylesheet">
+    <title>Calculadora</title>
+    
+
+</head>
+<body>
+
+    <div class="fundo">
+
+    
+
+        <div class="calculadora">
+
+            <h1>Calculadora</h1>
+
+            <p id="resultado"></p>
+
+            <table>
+                <tr>
+                    <td><Button class="button" onclick="Clean()">C</Button></td>
+                    <td><Button class="button" onclick="back('')"><</Button></td>
+                    <td><Button class="button" onclick="insert('/')">/</Button></td>
+                    <td><Button class="button" onclick="insert('*')">X</Button></td>
+                </tr>
+
+                <tr>
+                    <td><Button class="button" onclick="insert('7')">7</Button></td>
+                    <td><Button class="button" onclick="insert('8')">8</Button></td>
+                    <td><Button class="button" onclick="insert('9')">9</Button></td>
+                    <td><Button class="button" onclick="insert('-')">-</Button></td>
+                </tr>
+
+                <tr>
+                    <td><Button class="button" onclick="insert('4')">4</Button></td>
+                    <td><Button class="button" onclick="insert('5')">5</Button></td>
+                    <td><Button class="button" onclick="insert('6')">6</Button></td>
+                    <td><Button class="button" onclick="insert('+')">+</Button></td>
+                </tr>
+
+                <tr>
+                    <td><Button class="button" onclick="insert('1')">1</Button></td>
+                    <td><Button class="button" onclick="insert('2')">2</Button></td>
+                    <td><Button class="button" onclick="insert('3')">3</Button></td>
+
+                    <td rowspan="2"><Button style="height: 106px;" class="button" onclick="calcular()">=</Button></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2"><Button style="width: 106px;" class="button" onclick="insert('0')">0</Button></td>
+                    <td><Button class="button" onclick="insert('.')">.</Button></td>
+                </tr>
+
+            </table>
+
+        </div>
+    </div>
+    <script type="text/javascript" src="script.js/script.js"></script>
+</body>
+</html>
